@@ -3,10 +3,16 @@ import "./Calculator.css";
 import KeyPad from "./KeyPad";
 
 function Calculator() {
-  let [inputValue, setInputValue] = useState(990);
+  let [inputValue, setInputValue] = useState("");
   function handleChange(value) {
-    value = value + inputValue;
+    value = inputValue + value;
     setInputValue(value);
+  }
+  function handlerClear() {
+    setInputValue("");
+  }
+  function handleResult() {
+    setInputValue(eval(inputValue));
   }
   return (
     <div className="calculator-container">
@@ -21,7 +27,11 @@ function Calculator() {
             handleChange(e.target.value);
           }}
         />
-        <KeyPad handle={handleChange} />
+        <KeyPad
+          handle={handleChange}
+          clear={handlerClear}
+          result={handleResult}
+        />
       </div>
     </div>
   );
