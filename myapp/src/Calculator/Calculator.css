@@ -1,0 +1,73 @@
+/* KeyPad.css */
+
+.keypad-container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.keypad-container h1 {
+  text-align: center;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.keypad-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.keypad-button {
+  font-size: 1.2em;
+  padding: 10px 20px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.keypad-button:hover {
+  background-color: #e0e0e0;
+}
+
+.keypad-button:active {
+  background-color: #ccc;
+}
+/* Calculator.css */
+
+.calculator-container {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.calculator-container h1 {
+  text-align: center;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+}
+
+.calculator-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: right;
+}
+
+.calculator-input {
+  width: 100%;
+  padding: 10px;
+  font-size: 1.2em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  text-align: right;
+}

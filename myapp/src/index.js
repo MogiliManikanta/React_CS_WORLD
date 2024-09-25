@@ -5,13 +5,15 @@ import "./index.css";
 // import App from './App';
 // import ChangeBackGroundColor from "./ChangeBackGroundColor";
 import reportWebVitals from "./reportWebVitals";
-import TodoApp from "./TodoApp";
+// import TodoApp from "./TodoApp";
+import Calculator from "./Calculator/Calculator";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   // <Counter />
-  <TodoApp />
+  // <TodoApp />
+  <Calculator />
   // </React.StrictMode>
 );
 
