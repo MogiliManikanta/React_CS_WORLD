@@ -6,14 +6,16 @@ import "./index.css";
 // import ChangeBackGroundColor from "./ChangeBackGroundColor";
 import reportWebVitals from "./reportWebVitals";
 // import TodoApp from "./TodoApp";
-import Calculator from "./Calculator/Calculator";
+// import Calculator from "./Calculator/Calculator";
+import App from "./NavBar/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
   // <Counter />
   // <TodoApp />
-  <Calculator />
+  // <Calculator />
+  <App />
   // </React.StrictMode>
 );
 
