@@ -1,4 +1,5 @@
 /* Main.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -6,7 +7,8 @@
   padding: 10px 20px;
   border-bottom: 2px solid #ddd;
   background-color: #f8f9fa;
-  width: 100%;
+  /* width: 100%; */
+  /* position: fixed; */
 }
 
 .navbar h1 {

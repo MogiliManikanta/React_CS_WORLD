@@ -1,35 +1,32 @@
 import React from "react";
 import "./Main.css";
-// import About from "./About";
-// import Contact from "./Contact";
-// import Services from "./Services";
-// import Login from "./Login";
 import { Link } from "react-router-dom";
 
 function Main() {
   return (
-    <>
-      <div className="navbar">
-        <h1>Navbar</h1>
-        <ul>
-          <Link to="/">
-            <li>Home</li>
-          </Link>
-          <Link to="/about">
-            <li>About</li>
-          </Link>
-          <Link to="/contact">
-            <li>Contact</li>
-          </Link>
-          <Link to="/services">
-            <li>Services</li>
-          </Link>
-          <Link to="/login">
-            <li>Login</li>
-          </Link>
-        </ul>
-      </div>
-    </>
+    <div className="navbar">
+      <h1>Navbar</h1>
+      <ul>
+        <li>
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/about">About</Link>
+        </li>
+        <li>
+          <Link to="/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/services">Services</Link>
+        </li>
+        <li>
+          <Link to="/login">Login</Link>
+        </li>
+        <li>
+          <Link to="/user">User</Link>
+        </li>
+      </ul>
+    </div>
   );
 }
 
