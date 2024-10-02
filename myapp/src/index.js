@@ -8,7 +8,8 @@ import reportWebVitals from "./reportWebVitals";
 // import TodoApp from "./TodoApp";
 // import Calculator from "./Calculator/Calculator";
 // import App from "./NavBar/App";
-import App from "./MemoHook/App";
+// import App from "./MemoHook/App";
+import App from "./ChildToParent/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(

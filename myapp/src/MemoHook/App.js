@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 function App() {
   const [time, setTime] = useState(new Date().toLocaleTimeString());
 
@@ -17,6 +17,20 @@ function App() {
     { id: 4, name: "Washing Machine" },
   ]);
 
+  const filteredProducts = useMemo(
+    () => getProducts(products, searchText),
+    [products, searchText]
+  );
+
+  // getProducts(products, searchText);
+
+  function getProducts(products, searchText) {
+    console.log("hello");
+    return products.filter((p) =>
+      p.name.toLowerCase().includes(searchText.toLowerCase())
+    );
+  }
+
   return (
     <>
       <h1>{time}</h1>
@@ -26,16 +40,28 @@ function App() {
         placeholder="Enter Text"
         value={searchText}
         onChange={(e) => setSearchText(e.target.value)}
-            setProducts(products.filter((p) => p.name.includes(searchText)))  
-        }
+
+        // setProducts(products.filter((p) => p.name.includes(searchText)))
       />
       <br />
-      {products.map((p) => (
-        <ul key={p.id}>
-          <li>{p.id}</li>
-          <li>{p.name}</li>
-        </ul>
-      ))}
+      <br />
+      <br />
+      <table border="1" cellPadding="10" cellSpacing="0" padding="10">
+        <thead>
+          <tr>
+            <td>ID</td>
+            <td>Name</td>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredProducts.map((p) => (
+            <tr key={p.id}>
+              <td>{p.id}</td>
+              <td>{p.name}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
     </>
   );
 }
