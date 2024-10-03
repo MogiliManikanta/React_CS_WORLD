@@ -1,0 +1,39 @@
+/* Main.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ddd;
+  background-color: #f8f9fa;
+  /* width: 100%; */
+  /* position: fixed; */
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  cursor: pointer;
+  padding: 8px 12px;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar li:hover {
+  color: #007bff; /* Blue color on hover */
+}

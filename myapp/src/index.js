@@ -9,8 +9,11 @@ import ReactDOM from "react-dom/client";
 // import Calculator from "./Calculator/Calculator";
 // import App from "./NavBar/App";
 // import App from "./MemoHook/App";
-import App from "./ClassComponents/App";
-
+// import App from "./LazyLoading/App";
+// import App from "./Lazyrouting/App";
+// import App from "./HigherOrderComponent/App";
+// import App from "./ClassComponents/App";
+import App from "./PropTypes/App";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
